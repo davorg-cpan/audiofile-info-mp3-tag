@@ -1,0 +1,22 @@
+2003-09-27 20:32  dave
+
+	* README (1.2): Changed to describe Module::Build installation
+	method.
+	* Build.PL (1.3), MANIFEST (1.2): Reordered Build.pl (create build
+	script _before_ writing notes).  Added Makefile.PL to MANIFEST.
+	* Build.PL (1.2), META.yml (1.2), lib/AudioFile/Info/Build.pm
+	(1.2), t/1.t (1.2): Various Changes.
+
+2003-09-27 16:51  dave
+
+	* lib/AudioFile/Info/MP3/ID3Lib.pm (1.2): Fixed description.
+	* Build.PL (1.1.1.1), Changes (1.1.1.1), MANIFEST (1.1.1.1),
+	META.yml (1.1.1.1), README (1.1.1.1), lib/AudioFile/Info/Build.pm
+	(1.1.1.1), lib/AudioFile/Info/MP3/ID3Lib.pm (1.1.1.1), t/1.t
+	(1.1.1.1), t/test.mp3 (1.1.1.1): AudioFile::Info plugin for
+	MP3::ID3Lib
+	* Build.PL (1.1), Changes (1.1), MANIFEST (1.1), META.yml (1.1),
+	README (1.1), lib/AudioFile/Info/Build.pm (1.1),
+	lib/AudioFile/Info/MP3/ID3Lib.pm (1.1), t/1.t (1.1), t/test.mp3
+	(1.1): Initial revision
+
