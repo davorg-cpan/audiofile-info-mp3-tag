@@ -1,3 +1,20 @@
+#
+# $Id$
+#
+
+=head1 NAME
+
+AudioFile::Info::MP3::Tag - Perl extension to get info from MP3 files.
+
+=head1 DESCRIPTION
+
+This is a plugin for AudioFile::Info which uses MP3::Tag to get or set
+data about MP3 files.
+
+See L<AudioFile::Info> for more details.
+
+=cut
+
 package AudioFile::Info::MP3::Tag;
 
 use 5.006;
@@ -70,17 +87,6 @@ sub AUTOLOAD {
 
 1;
 __END__
-
-=head1 NAME
-
-AudioFile::Info::MP3::Tag - Perl extension to get info from MP3 files.
-
-=head1 DESCRIPTION
-
-This is a plugin for AudioFile::Info which uses MP3::Tag to get or set
-data about MP3 files.
-
-See L<AudioFile::Info> for more details.
 
 =head1 AUTHOR
 
