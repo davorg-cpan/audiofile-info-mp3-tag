@@ -11,7 +11,7 @@ our $VERSION = sprintf "%d.%02d", '$Revision$ ' =~ /(\d+)\.(\d+)/;
 
 my %data = (artist => ['artist', 'TPE1'],
             title  => ['song', 'TIT2'],
-            album  => ['artist', 'TALB'],
+            album  => ['album', 'TALB'],
             track  => ['track', 'TRCK'],
             year   => ['year', 'TYER'],
             genre  => ['genre', 'TCON']);
@@ -28,7 +28,7 @@ sub new {
 sub DESTROY {
   my $file = $_[0]->{obj}{ID3v2}{mp3} || $_[0]->{obj}{ID3v2}{mp3};
 
-  $file->close;
+  $file->close if defined $file;
 }
 
 sub AUTOLOAD {
@@ -39,6 +39,8 @@ sub AUTOLOAD {
   die "Invalid attribute $sub" unless exists $data{$sub};
 
   if ($_[1]) {
+    $_[0]->{obj}->new_tag('ID3v1') unless $_[0]->{obj}{ID3v1};
+    $_[0]->{obj}->new_tag('ID3v2') unless $_[0]->{obj}{ID3v2};
     if (my $frame = $_[0]->{obj}{ID3v1}) {
       my $tag = $data{$sub}[0];
       $frame->$tag($_[1]);
