@@ -9,4 +9,5 @@ lib/AudioFile/Info/MP3/Tag.pm
 t/1_read.t
 t/2_write.t
 t/3_pod.t
+t/4_pod_coverage.t
 t/test.mp3
