@@ -9,11 +9,12 @@ my $b = AudioFile::Info::Build->new(module_name => $module,
                                                  perl            => '5.6.0',
                                                  AudioFile::Info => 0,
                                                  MP3::Tag        => 0,
+                                                 YAML            => 0,
                                                 },
                                     build_requires => {
                                                  Module::Build   => 0
                                                 },
-                                    create_makefile_pl => 'passthrough',
+                                    create_makefile_pl => 'traditional',
                                    );
 
 $b->create_build_script;
