@@ -24,7 +24,7 @@ use Carp;
 
 use MP3::Tag;
 
-our $VERSION = sprintf "%d.%02d", '$Revision$ ' =~ /(\d+)\.(\d+)/;
+our $VERSION = '1.06';
 
 my %data = (artist => ['artist', 'TPE1'],
             title  => ['song', 'TIT2'],
