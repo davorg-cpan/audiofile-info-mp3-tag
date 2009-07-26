@@ -97,11 +97,11 @@ by AudioFile::Info::new.
 
 =head1 AUTHOR
 
-Dave Cross, E<lt>dave@dave.org.ukE<gt>
+Dave Cross, E<lt>dave@mag-sol.comE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2003-2006 by Dave Cross
+Copyright (c) 2003-2009 by Magnum Solutions Ltd. All rights reserved.
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself. 
