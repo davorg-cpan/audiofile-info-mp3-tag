@@ -1,7 +1,3 @@
-#
-# $Id$
-#
-
 =head1 NAME
 
 AudioFile::Info::MP3::Tag - Perl extension to get info from MP3 files.
