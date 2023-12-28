@@ -51,7 +51,7 @@ sub DESTROY {
 sub AUTOLOAD {
   our $AUTOLOAD;
 
-  my ($pkg, $sub) = $AUTOLOAD =~ /(.+)::(\w+)/;
+  my ($sub) = $AUTOLOAD =~ /::(\w+)$/;
 
   die "Invalid attribute $sub" unless exists $data{$sub};
 
