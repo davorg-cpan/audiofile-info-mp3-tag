@@ -20,7 +20,7 @@ use Carp;
 
 use MP3::Tag;
 
-our $VERSION = '1.6.3';
+our $VERSION = '1.6.4';
 
 my %data = (artist => ['artist', 'TPE1'],
             title  => ['song', 'TIT2'],
